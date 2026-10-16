@@ -1,5 +1,5 @@
 {
-  "name": "ai-build",
+  "name": "pathwise",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -37,5 +37,5 @@
     "vercel": "^64.3.1",
     "vite": "^5.4.10"
   },
-  "description": "AI Build: an educational SaaS prototype that turns enterprise AI use cases into prioritized, governed roadmaps"
+  "description": "Pathwise: an educational SaaS prototype that turns enterprise AI use cases into prioritized, governed roadmaps"
 }

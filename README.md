@@ -1,8 +1,8 @@
-# AI Build
+# Pathwise
 
 **Turn enterprise AI use cases into a prioritized, governed roadmap.**
 
-AI Build is an educational SaaS prototype for enterprise executives and strategy teams. It reimagines the static "AI use-case report" as an interactive product: a filterable library of AI use cases, a Roadmap Builder that ranks and sequences opportunities for a specific company, a strategy advisor, and a freemium business model with accounts and (test-mode) payments.
+Pathwise is an educational SaaS prototype for enterprise executives and strategy teams. It reimagines the static "AI use-case report" as an interactive product: a filterable library of AI use cases, a Roadmap Builder that ranks and sequences opportunities for a specific company, a strategy advisor, and a freemium business model with accounts and (test-mode) payments.
 
 > **Disclaimer:** This is an educational portfolio project. All use cases, scores, timelines and prices are illustrative **example data**, not benchmarks or advice. It is not affiliated with, endorsed by, or derived from Deloitte or any other firm. The content is original and was inspired by the general format of industry AI use-case reports.
 

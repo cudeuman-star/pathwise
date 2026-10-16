@@ -2,7 +2,7 @@
 
 Most enterprise AI reports end the same way: a long list of use cases, then the reader is on their own.
 
-So I built AI Build, an educational prototype that asks what an executive actually needs next: *which of these should we do first, and how do we govern it?*
+So I built Pathwise, an educational prototype that asks what an executive actually needs next: *which of these should we do first, and how do we govern it?*
 
 What it does:
 🔎 A filterable library of 60+ original example AI use cases across 9 industries

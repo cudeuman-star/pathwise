@@ -1,7 +1,7 @@
 // Shared helpers for serverless functions. Zero dependencies (node:crypto + fetch).
 import crypto from "node:crypto"; import fs from "node:fs"; import path from "node:path";
 const SECRET = process.env.AUTH_SECRET || "dev-only-insecure-secret-change-me";
-export const DEMO = { email: "demo@aibuild.dev", name: "Demo Executive" };
+export const DEMO = { email: "demo@pathwise.dev", name: "Demo Executive" };
 
 export async function body(req) {
   if (req.body !== undefined) return typeof req.body === "string" ? JSON.parse(req.body || "{}") : req.body;
@@ -25,9 +25,9 @@ export function verify(t) {
   if (!ok) return null; const u = JSON.parse(Buffer.from(p, "base64url").toString()); return u.exp > Date.now() ? u : null;
 }
 const secure = () => (process.env.VERCEL ? "; Secure" : "");
-export const sessionCookie = u => `aib_session=${sign(u)}; Path=/; HttpOnly; SameSite=Lax; Max-Age=${7 * 86400}${secure()}`;
-export const clearCookie = () => `aib_session=; Path=/; HttpOnly; SameSite=Lax; Max-Age=0${secure()}`;
-export function currentUser(req) { const m = (req.headers.cookie || "").match(/(?:^|;\s*)aib_session=([^;]+)/); return m ? verify(m[1]) : null; }
+export const sessionCookie = u => `pw_session=${sign(u)}; Path=/; HttpOnly; SameSite=Lax; Max-Age=${7 * 86400}${secure()}`;
+export const clearCookie = () => `pw_session=; Path=/; HttpOnly; SameSite=Lax; Max-Age=0${secure()}`;
+export function currentUser(req) { const m = (req.headers.cookie || "").match(/(?:^|;\s*)pw_session=([^;]+)/); return m ? verify(m[1]) : null; }
 export const publicUser = u => ({ email: u.email, name: u.name, plan: u.plan || "free", demo: !!u.demo });
 
 // --- password hashing ---
