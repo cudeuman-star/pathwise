@@ -14,8 +14,8 @@ The most interesting part wasn't the code. It was the product decisions: who pay
 
 I built it with AI-assisted development. I owned the strategy, scope and UX, and used an AI coding agent to implement it and test it end to end. It's a great way to go from idea to a working product fast.
 
-Try it (demo login included): [LIVE LINK]
-Code: [REPO LINK]
+Try it (demo login included): https://pathwise-blond.vercel.app
+Code: https://github.com/cudeuman-star/pathwise
 
 Not affiliated with any consulting firm. Example data only.
 
